@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/uuid/page": "app/uuid/page.js",
+  "/base64/page": "app/base64/page.js",
+  "/slugify/page": "app/slugify/page.js"
+}
