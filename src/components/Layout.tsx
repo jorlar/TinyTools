@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Footer from './Footer';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isDark, setIsDark] = useState(false);
@@ -21,10 +22,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     { name: 'UUID Generator', path: '/uuid' },
     { name: 'Slugify', path: '/slugify' },
     { name: 'Base64', path: '/base64' },
+    { name: 'JSON Formatter', path: '/json-formatter' },
+    { name: 'Color Picker', path: '/color-picker' },
+    { name: 'URL Parser', path: '/url-parser' },
+    { name: 'Markdown Preview', path: '/markdown-preview' },
+    { name: 'Code Minifier', path: '/code-minifier' },
+    { name: 'Regex Tester', path: '/regex-tester' },
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200 flex flex-col">
       <nav className="bg-white dark:bg-gray-800 shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
@@ -59,9 +66,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </div>
         </div>
       </nav>
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="flex-grow">
         {children}
       </main>
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 {
+  "/markdown-preview/page": "app/markdown-preview/page.js",
+  "/code-minifier/page": "app/code-minifier/page.js",
   "/page": "app/page.js",
-  "/uuid/page": "app/uuid/page.js",
-  "/base64/page": "app/base64/page.js",
-  "/slugify/page": "app/slugify/page.js"
+  "/color-picker/page": "app/color-picker/page.js",
+  "/regex-tester/page": "app/regex-tester/page.js"
 }

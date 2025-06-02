@@ -11,20 +11,25 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/uuid/page": [
+    "/markdown-preview/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/uuid/page.js"
+      "static/chunks/app/markdown-preview/page.js"
     ],
-    "/slugify/page": [
+    "/regex-tester/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/slugify/page.js"
+      "static/chunks/app/regex-tester/page.js"
     ],
-    "/base64/page": [
+    "/code-minifier/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/base64/page.js"
+      "static/chunks/app/code-minifier/page.js"
+    ],
+    "/color-picker/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/color-picker/page.js"
     ]
   }
 }
