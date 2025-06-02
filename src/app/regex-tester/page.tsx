@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import CopyButton from '@/components/CopyButton';
 
 export default function RegexTester() {
   const [pattern, setPattern] = useState('');
@@ -16,6 +17,8 @@ export default function RegexTester() {
       setMatches(['Invalid regex pattern']);
     }
   };
+
+  const matchesOutput = matches.join(', ');
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">
@@ -53,11 +56,14 @@ export default function RegexTester() {
           Test
         </button>
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-            Matches
-          </label>
+          <div className="flex justify-between items-center mb-2">
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              Matches
+            </label>
+            {matchesOutput && <CopyButton text={matchesOutput} />}
+          </div>
           <pre className="w-full p-3 border rounded-lg bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:text-white overflow-auto">
-            {matches.join(', ')}
+            {matchesOutput}
           </pre>
         </div>
       </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import CopyButton from '@/components/CopyButton';
 
 export default function URLParser() {
   const [url, setUrl] = useState('');
@@ -35,6 +36,8 @@ export default function URLParser() {
     }
   };
 
+  const parsedOutput = JSON.stringify(parsed, null, 2);
+
   return (
     <div className="max-w-2xl mx-auto space-y-6">
       <h1 className="text-3xl font-bold text-gray-900 dark:text-white">URL Parser</h1>
@@ -59,11 +62,14 @@ export default function URLParser() {
           Parse
         </button>
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-            Parsed URL
-          </label>
+          <div className="flex justify-between items-center mb-2">
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              Parsed URL
+            </label>
+            {parsedOutput && <CopyButton text={parsedOutput} />}
+          </div>
           <pre className="w-full p-3 border rounded-lg bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:text-white overflow-auto">
-            {JSON.stringify(parsed, null, 2)}
+            {parsedOutput}
           </pre>
         </div>
       </div>

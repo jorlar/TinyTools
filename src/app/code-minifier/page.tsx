@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import CopyButton from '@/components/CopyButton';
 
 export default function CodeMinifier() {
   const [input, setInput] = useState('');
@@ -35,9 +36,12 @@ export default function CodeMinifier() {
           Minify
         </button>
         <div>
-          <label htmlFor="output" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-            Minified Code
-          </label>
+          <div className="flex justify-between items-center mb-2">
+            <label htmlFor="output" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              Minified Code
+            </label>
+            {output && <CopyButton text={output} />}
+          </div>
           <pre
             id="output"
             className="w-full h-32 p-3 border rounded-lg bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:text-white overflow-auto"

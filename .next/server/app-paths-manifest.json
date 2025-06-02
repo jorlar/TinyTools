@@ -1,7 +1,12 @@
 {
+  "/slugify/page": "app/slugify/page.js",
+  "/url-parser/page": "app/url-parser/page.js",
+  "/json-formatter/page": "app/json-formatter/page.js",
+  "/base64/page": "app/base64/page.js",
+  "/uuid/page": "app/uuid/page.js",
+  "/color-picker/page": "app/color-picker/page.js",
   "/markdown-preview/page": "app/markdown-preview/page.js",
   "/code-minifier/page": "app/code-minifier/page.js",
-  "/page": "app/page.js",
-  "/color-picker/page": "app/color-picker/page.js",
-  "/regex-tester/page": "app/regex-tester/page.js"
+  "/regex-tester/page": "app/regex-tester/page.js",
+  "/page": "app/page.js"
 }

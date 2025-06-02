@@ -1,20 +1,30 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/markdown-preview/page": [
+    "/color-picker/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/markdown-preview/page.js"
+      "static/chunks/app/color-picker/page.js"
+    ],
+    "/uuid/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/uuid/page.js"
+    ],
+    "/base64/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/base64/page.js"
+    ],
+    "/slugify/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/slugify/page.js"
     ],
     "/regex-tester/page": [
       "static/chunks/webpack.js",
@@ -26,10 +36,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/code-minifier/page.js"
     ],
-    "/color-picker/page": [
+    "/markdown-preview/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/color-picker/page.js"
+      "static/chunks/app/markdown-preview/page.js"
+    ],
+    "/url-parser/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/url-parser/page.js"
+    ],
+    "/json-formatter/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/json-formatter/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ]
   }
 }
